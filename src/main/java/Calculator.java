@@ -11,23 +11,20 @@ public class Calculator {
     public String mult(int x, int y) {
         return "Ответ: " + (x * y);
     }
-    public String div(int x, int y) throws ArithmeticException{
-        if (y == 0){
+
+    public String div(int x, int y) throws ArithmeticException {
+        if (y == 0) {
             throw new ArithmeticException("Учи математику, не дели на ноль");
         } else {
-            return "Ответ: " + ((float)x/(float)y);
+            return "Ответ: " + ((float) x / y);
         }
     }
 }
 
-//    public String div(int x, int y) {
-//        try {
-//            return "Ответ: " + ((float)x/(float)y);
-//        } catch (Exception e) {
-//            System.out.println("Учи математику, не дели на ноль");
-//        }
-//        return "Ответ: " + ((float) x / (float) y);
-//    }
+
+
+
+//
 
 
 ////    public String div(int x, int y) throws ArithmeticException{
@@ -39,3 +36,18 @@ public class Calculator {
 ////            throw new ArithmeticException("Учи математику, не дели на ноль");
 ////        }
 ////        return result;
+
+//public String div(int x, int y) throws ArithmeticException{
+//        if (y == 0){
+//        throw new ArithmeticException("Учи математику, не дели на ноль");
+//        } else {
+//        return "Ответ: " + ((float)x/y);
+//        }
+
+//    public void div(int x, int y) {
+//        try {
+//            System.out.println("Ответ: " + (x/y));
+//        } catch (Exception e) {
+//            System.out.println("Учи математику, не дели на ноль");
+//        }
+//    }

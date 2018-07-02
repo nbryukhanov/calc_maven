@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
-public class Calculator2 {
-    public static void main(String[] args) {
+public class Calculator2 extends Calculator {
+    public void main(String[] args) {
         boolean run = false;
         do {
             Scanner scanner = new Scanner(System.in);
@@ -27,7 +27,7 @@ public class Calculator2 {
             }
             System.out.println("Продолжить? Да/Нет");
             String again = scanner.next();
-            if (again.equals("Да") || again.equals("Lf")|| again.equals("да")|| again.equals("lf")){
+            if (again.equalsIgnoreCase("Да") || again.equalsIgnoreCase("Lf")){
                 run = true;
             } else {
                 run = false;
