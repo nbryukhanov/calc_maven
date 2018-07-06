@@ -22,8 +22,9 @@ public class Calculator2 extends Calculator {
                     System.out.println("Ответ:" + (fn * sn));
                     break;
                 case "/":
-                    System.out.println("Ответ:" + (fn / sn));
+                    System.out.println("Ответ:" + ((double)fn / sn));
                     break;
+
             }
             System.out.println("Продолжить? Да/Нет");
             String again = scanner.next();
