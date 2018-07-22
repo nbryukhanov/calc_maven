@@ -21,8 +21,25 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
         FlexibleCalculator calc = new FlexibleCalculator();
-        String expression = scanner.nextLine();
-        calc.CalculateSymbol(expression);
-        calc.CalculateText(expression);
+
+        System.out.println("Нажмите:\n 1 - Для ввода оператора символом. \n 2 - Для ввода оператора текстом.");
+        String operator = scanner.nextLine();
+        if (operator.equals("1")) {
+            System.out.println("Введите выражение");
+            String expression = scanner.nextLine();
+            calc.CalculateSymbol(expression);
+        }
+        else if (operator.equals("2")){
+            System.out.println("Введите выражение");
+            String expression = scanner.nextLine();
+            calc.CalculateText(expression);
+        }
+        else {
+            System.out.println("Ошибка. Допустимы для ввода только следующие значения: '1, 2'");
+        }
+
+
+
+
     }
 }
