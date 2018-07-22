@@ -22,7 +22,15 @@ public class Calculator {
 }
 
 
-
+//        int result;
+//        try {
+//            result = (x/y);
+//        } catch (ArithmeticException e) {
+//            throw new ArithmeticException("Учи математику, не дели на ноль");
+//        }
+//        return result;
+//    }
+//}
 
 
 
